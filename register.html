@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register With Us | Student Hub</title>
+    <!-- External CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="profile-avatar">📝</div>
+            <h1>Register With Us</h1>
+            <p class="subtitle">Join our Web Design & UI/UX Community</p>
+            <p class="university">Faculty of Computers and Information — Zagazig University</p>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Back to profile link -->
+            <a href="index.html" class="back-link">← Back to Profile</a>
+
+            <section id="register-section">
+                <h2><span>✍️</span> Registration Form</h2>
+                <div class="contact-box">
+                    <form action="#" method="post">
+                        <div class="form-row">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="e.g. name@example.com" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="password">Password (at least 6 characters)</label>
+                            <input type="password" id="password" name="password" minlength="6" placeholder="••••••••" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="academicYear">Academic Year</label>
+                            <select id="academicYear" name="academicYear">
+                                <option value="year1">First Year (Freshman)</option>
+                                <option value="year2">Second Year (Sophomore)</option>
+                                <option value="year3">Third Year (Junior)</option>
+                                <option value="year4">Fourth Year (Senior)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="message">Message or Note (Optional)</label>
+                            <textarea id="message" name="message" rows="3" placeholder="Tell us about your interests or leave a note..."></textarea>
+                        </div>
+
+                        <div class="checkbox-row">
+                            <input type="checkbox" id="subscribe" name="subscribe" checked>
+                            <label for="subscribe">Keep me updated with new courses and workshops</label>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Register Now</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>Web Design Lab — 2026 · <a href="index.html">Back to Profile</a></p>
+            <p>Faculty of Computers and Information — Zagazig University</p>
+        </footer>
+    </div>
+
+</body>
+</html>
