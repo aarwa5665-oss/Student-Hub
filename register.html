@@ -3,77 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register With Us | Student Hub</title>
+    <title>Community Registration | Student Hub</title>
     <!-- External CSS Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
-        <!-- Header -->
-        <header>
-            <div class="profile-avatar">📝</div>
-            <h1>Register With Us</h1>
+        <!-- Hero Header -->
+        <header class="hero-header">
+            <div class="profile-avatar">AM</div>
+            <h1>Student Hub Registration</h1>
             <p class="subtitle">Join our Web Design & UI/UX Community</p>
-            <p class="university">Faculty of Computers and Information — Zagazig University</p>
+            <div class="university">
+                Faculty of Computers and Information — Zagazig University
+            </div>
         </header>
+
+        <!-- Modern Floating Navbar -->
+        <nav class="main-nav">
+            <div class="nav-links">
+                <a href="index.html">Profile</a>
+                <a href="todo.html">Tasks</a>
+                <a href="counter.html">Counter</a>
+            </div>
+            <a href="register.html" class="nav-cta-btn active">Register</a>
+        </nav>
 
         <!-- Main Content -->
         <main>
-            <!-- Back to profile link -->
             <a href="index.html" class="back-link">← Back to Profile</a>
 
-            <section id="register-section">
-                <h2><span>✍️</span> Registration Form</h2>
-                <div class="contact-box">
-                    <form action="#" method="post">
-                        <div class="form-row">
-                            <label for="fullName">Full Name</label>
-                            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
-                        </div>
-
-                        <div class="form-row">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" placeholder="e.g. name@example.com" required>
-                        </div>
-
-                        <div class="form-row">
-                            <label for="password">Password (at least 6 characters)</label>
-                            <input type="password" id="password" name="password" minlength="6" placeholder="••••••••" required>
-                        </div>
-
-                        <div class="form-row">
-                            <label for="academicYear">Academic Year</label>
-                            <select id="academicYear" name="academicYear">
-                                <option value="year1">First Year (Freshman)</option>
-                                <option value="year2">Second Year (Sophomore)</option>
-                                <option value="year3">Third Year (Junior)</option>
-                                <option value="year4">Fourth Year (Senior)</option>
-                            </select>
-                        </div>
-
-                        <div class="form-row">
-                            <label for="message">Message or Note (Optional)</label>
-                            <textarea id="message" name="message" rows="3" placeholder="Tell us about your interests or leave a note..."></textarea>
-                        </div>
-
-                        <div class="checkbox-row">
-                            <input type="checkbox" id="subscribe" name="subscribe" checked>
-                            <label for="subscribe">Keep me updated with new courses and workshops</label>
-                        </div>
-
-                        <button type="submit" class="submit-btn">Register Now</button>
-                    </form>
+            <div class="form-card">
+                <div class="section-header">
+                    <div class="icon-badge">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="8.5" cy="7" r="4"></circle>
+                            <line x1="20" y1="8" x2="20" y2="14"></line>
+                            <line x1="23" y1="11" x2="17" y2="11"></line>
+                        </svg>
+                    </div>
+                    <h2 class="section-title">Registration Form</h2>
                 </div>
-            </section>
+
+                <!-- Exercise 2 requirement: <p id="msg"></p> before the form -->
+                <p id="msg"></p>
+
+                <form id="regForm" action="#" method="post">
+                    <div class="form-row">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="e.g. name@example.com">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="password">Password (at least 6 characters)</label>
+                        <input type="password" id="password" name="password" placeholder="••••••••">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="academicYear">Academic Year</label>
+                        <select id="academicYear" name="academicYear">
+                            <option value="year1">First Year (Freshman)</option>
+                            <option value="year2">Second Year (Sophomore)</option>
+                            <option value="year3">Third Year (Junior)</option>
+                            <option value="year4">Fourth Year (Senior)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="message">Message or Note (Optional)</label>
+                        <textarea id="message" name="message" rows="3" placeholder="Tell us about your interests in Web Design or UI/UX..."></textarea>
+                    </div>
+
+                    <div class="checkbox-row">
+                        <input type="checkbox" id="subscribe" name="subscribe" checked>
+                        <label for="subscribe">Keep me updated with new design workshops and labs</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Complete Registration</button>
+                </form>
+            </div>
         </main>
 
         <!-- Footer -->
-        <footer>
-            <p>Web Design Lab — 2026 · <a href="index.html">Back to Profile</a></p>
-            <p>Faculty of Computers and Information — Zagazig University</p>
+        <footer class="main-footer">
+            <p>Faculty of Computers and Information — Zagazig University · 2026</p>
         </footer>
     </div>
 
+    <!-- Exercise 2 script -->
+    <script src="register.js"></script>
 </body>
 </html>
