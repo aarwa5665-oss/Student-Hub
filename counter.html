@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Counter | Student Hub</title>
+    <!-- External CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Hero Header -->
+        <header class="hero-header">
+            <div class="profile-avatar">AM</div>
+            <h1>Focus Round Counter</h1>
+            <p class="subtitle">Study Sessions & Pomodoro Tracker</p>
+            <div class="university">
+                Faculty of Computers and Information — Zagazig University
+            </div>
+        </header>
+
+        <!-- Modern Floating Navbar -->
+        <nav class="main-nav">
+            <div class="nav-links">
+                <a href="index.html">Profile</a>
+                <a href="todo.html">Tasks</a>
+                <a href="counter.html" class="active">Counter</a>
+            </div>
+            <a href="register.html" class="nav-cta-btn">Join / Register</a>
+        </nav>
+
+        <!-- Main Content -->
+        <main>
+            <a href="index.html" class="back-link">← Back to Profile</a>
+
+            <div class="counter-box">
+                <div class="section-header" style="justify-content: center; border-bottom: none; margin-bottom: 0;">
+                    <div class="icon-badge">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h2 class="section-title">Interactive Session Counter</h2>
+                </div>
+                <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 6px;">
+                    Track completed study rounds. Negative numbers highlight automatically.
+                </p>
+
+                <!-- Exercise 1 requirement: element with id="count" -->
+                <div id="count" class="counter-display">0</div>
+
+                <!-- 3 buttons: Decrease, Reset, Increase -->
+                <div class="counter-controls">
+                    <button id="minus" class="btn-counter">- Decrease</button>
+                    <button id="reset" class="btn-counter">↺ Reset</button>
+                    <button id="plus" class="btn-counter">+ Increase</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <p>Faculty of Computers and Information — Zagazig University · 2026</p>
+        </footer>
+    </div>
+
+    <!-- Exercise 1 script -->
+    <script src="counter.js"></script>
+</body>
+</html>

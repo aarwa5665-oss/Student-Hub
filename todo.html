@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Tasks Manager | Student Hub</title>
+    <!-- External CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Hero Header -->
+        <header class="hero-header">
+            <div class="profile-avatar">AM</div>
+            <h1>Study Tasks Manager</h1>
+            <p class="subtitle">Organize & Track Your Daily Goals</p>
+            <div class="university">
+                Faculty of Computers and Information — Zagazig University
+            </div>
+        </header>
+
+        <!-- Modern Floating Navbar -->
+        <nav class="main-nav">
+            <div class="nav-links">
+                <a href="index.html">Profile</a>
+                <a href="todo.html" class="active">Tasks</a>
+                <a href="counter.html">Counter</a>
+            </div>
+            <a href="register.html" class="nav-cta-btn">Join / Register</a>
+        </nav>
+
+        <!-- Main Content -->
+        <main>
+            <a href="index.html" class="back-link">← Back to Profile</a>
+
+            <div class="todo-box">
+                <div class="section-header">
+                    <div class="icon-badge">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M9 11l3 3L22 4"></path>
+                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                        </svg>
+                    </div>
+                    <h2 class="section-title">Tasks Manager</h2>
+                </div>
+
+                <!-- Bonus: Live counter + Clear all button -->
+                <div class="todo-header-bar">
+                    <span id="taskCount">No tasks yet</span>
+                    <button id="clearBtn">Clear All ✕</button>
+                </div>
+
+                <!-- Input + Add Button -->
+                <div class="todo-input-group">
+                    <input type="text" id="taskInp" placeholder="Enter a new study task (press Enter or click Add)...">
+                    <button id="addBtn">Add Task +</button>
+                </div>
+
+                <!-- Exercise 3 requirement: <ul id="list"> -->
+                <ul id="list"></ul>
+
+                <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 18px; padding-top: 12px; border-top: 1px dashed var(--border-subtle);">
+                    💡 <strong>Tips:</strong> Click on any task to mark it as completed (strikethrough). Click <strong>Delete</strong> to remove a task.
+                </p>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <p>Faculty of Computers and Information — Zagazig University · 2026</p>
+        </footer>
+    </div>
+
+    <!-- Exercise 3 script -->
+    <script src="todo.js"></script>
+</body>
+</html>
