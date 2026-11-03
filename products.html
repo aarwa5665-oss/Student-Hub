@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل المنتجات والمقررات | Student Hub</title>
+    <!-- External CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Hero Header -->
+        <header class="hero-header">
+            <div class="profile-avatar">📦</div>
+            <h1>دليل المنتجات والمقررات</h1>
+            <p class="subtitle">سحب وفلترة المنتجات باستخدام fetch & async/await</p>
+            <div class="university">
+                كلية الحاسبات والمعلومات — جامعة الزقازيق
+            </div>
+        </header>
+
+        <!-- Modern Floating Navbar -->
+        <nav class="main-nav">
+            <div class="nav-links">
+                <a href="index.html">البروفايل</a>
+                <a href="todo.html">المهام</a>
+                <a href="counter.html">العداد</a>
+                <a href="students.html">دليل الطلاب 🎓</a>
+                <a href="products.html" class="active">المنتجات (APIs) 📦</a>
+            </div>
+            <a href="register.html" class="nav-cta-btn">تسجيل</a>
+        </nav>
+
+        <!-- Main Content -->
+        <main>
+            <a href="index.html" class="back-link">← العودة للبروفايل</a>
+
+            <div class="products-page-card">
+                <!-- Title matching Image 2 -->
+                <div class="products-header-title">
+                    <h2>📦 متجر الأدوات والكتب</h2>
+                </div>
+
+                <!-- Tabs: Local JSON vs Online API Bonus -->
+                <div class="source-tabs">
+                    <button id="tabLocal" class="tab-btn active">
+                        📁 المنتجات المحلية (products.json)
+                    </button>
+                    <button id="tabApi" class="tab-btn">
+                        🌐 سحب من النت (FakeStore API - بونص ⭐)
+                    </button>
+                </div>
+
+                <!-- Filter Controls matching instructor code IDs -->
+                <div class="filter-controls-row">
+                    <!-- Search input: #search -->
+                    <div class="search-wrap">
+                        <input type="text" id="search" placeholder="دور بالاسم...">
+                    </div>
+
+                    <!-- Category dropdown: #category -->
+                    <div class="select-wrap">
+                        <select id="category">
+                            <option value="all">كل الأقسام</option>
+                            <option value="كتاب">كتاب</option>
+                            <option value="كورس">كورس</option>
+                            <option value="أداة">أداة</option>
+                        </select>
+                    </div>
+
+                    <!-- Reset / Clear Button: #clearSaved -->
+                    <button id="clearSaved" class="clear-btn">امسح المحفوظ</button>
+                </div>
+
+                <!-- Results counter: #count -->
+                <div class="results-count-bar">
+                    <span id="count">النتائج: 0</span>
+                    <span id="sourceLabel" class="source-badge">المصدر: products.json</span>
+                </div>
+
+                <!-- Cards grid: #grid -->
+                <div id="grid" class="products-grid"></div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <p>كلية الحاسبات والمعلومات — جامعة الزقازيق · 2026</p>
+        </footer>
+    </div>
+
+    <!-- Script for Products -->
+    <script src="products.js"></script>
+</body>
+</html>

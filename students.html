@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل الطلاب | Student Hub</title>
+    <!-- External CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Hero Header -->
+        <header class="hero-header">
+            <div class="profile-avatar">🎓</div>
+            <h1>دليل الطلاب</h1>
+            <p class="subtitle">سحب وفلترة بيانات الطلاب باستخدام fetch & JSON</p>
+            <div class="university">
+                كلية الحاسبات والمعلومات — جامعة الزقازيق
+            </div>
+        </header>
+
+        <!-- Modern Floating Navbar -->
+        <nav class="main-nav">
+            <div class="nav-links">
+                <a href="index.html">البروفايل</a>
+                <a href="todo.html">المهام</a>
+                <a href="counter.html">العداد</a>
+                <a href="students.html" class="active">دليل الطلاب 🎓</a>
+                <a href="products.html">المنتجات (APIs) 📦</a>
+            </div>
+            <a href="register.html" class="nav-cta-btn">تسجيل</a>
+        </nav>
+
+        <!-- Main Content -->
+        <main>
+            <a href="index.html" class="back-link">← العودة للبروفايل</a>
+
+            <div class="products-page-card">
+                <!-- Title matching instructor screenshot -->
+                <div class="products-header-title">
+                    <h2>🎓 دليل الطلاب</h2>
+                </div>
+
+                <!-- Controls row matching instructor code -->
+                <div class="filter-controls-row">
+                    <!-- Search input: #search -->
+                    <div class="search-wrap">
+                        <input type="text" id="search" placeholder="دور بالاسم...">
+                    </div>
+
+                    <!-- Year select: #year -->
+                    <div class="select-wrap">
+                        <select id="year">
+                            <option value="all">كل الفرق</option>
+                            <option value="1">فرقة ١</option>
+                            <option value="2">فرقة ٢</option>
+                            <option value="3">فرقة ٣</option>
+                            <option value="4">فرقة ٤</option>
+                        </select>
+                    </div>
+
+                    <!-- Reset button: #clearSaved -->
+                    <button id="clearSaved" class="clear-btn">امسح المحفوظ</button>
+                </div>
+
+                <!-- Results counter: #count -->
+                <div class="results-count-bar">
+                    <span id="count">النتائج: 0</span>
+                    <span class="source-badge">المصدر: users.json</span>
+                </div>
+
+                <!-- Cards grid: #grid -->
+                <div id="grid" class="products-grid"></div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <p>كلية الحاسبات والمعلومات — جامعة الزقازيق · 2026</p>
+        </footer>
+    </div>
+
+    <!-- Script matching instructor's code -->
+    <script src="app.js"></script>
+</body>
+</html>

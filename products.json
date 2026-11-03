@@ -1,0 +1,8 @@
+[
+  { "id": 1, "title": "مدخل إلى الشبكات", "category": "كتاب", "price": 120 },
+  { "id": 2, "title": "كورس الويب", "category": "كورس", "price": 250 },
+  { "id": 3, "title": "آلة حاسبة علمية", "category": "أداة", "price": 340 },
+  { "id": 4, "title": "هياكل البيانات", "category": "كتاب", "price": 95 },
+  { "id": 5, "title": "كورس تصميم UI", "category": "كورس", "price": 180 },
+  { "id": 6, "title": "ماوس برمجة", "category": "أداة", "price": 450 }
+]
