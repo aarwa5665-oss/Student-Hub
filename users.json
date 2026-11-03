@@ -1,0 +1,10 @@
+[
+  { "id": 1, "name": "أحمد محمد علي", "email": "ahmed.ali@cs.edu", "year": 2, "city": "القاهرة" },
+  { "id": 2, "name": "سارة إبراهيم حسن", "email": "sara.ib@cs.edu", "year": 1, "city": "الجيزة" },
+  { "id": 3, "name": "محمود سيد عمر", "email": "mahmoud.o@cs.edu", "year": 3, "city": "الإسكندرية" },
+  { "id": 4, "name": "نور عبد الرحمن خليل", "email": "nour.k@cs.edu", "year": 2, "city": "المنصورة" },
+  { "id": 5, "name": "عمر خالد مصطفى", "email": "omar.m@cs.edu", "year": 4, "city": "القاهرة" },
+  { "id": 6, "name": "ليلى طارق فؤاد", "email": "laila.f@cs.edu", "year": 1, "city": "طنطا" },
+  { "id": 7, "name": "يوسف هاني صالح", "email": "youssef.s@cs.edu", "year": 3, "city": "الزقازيق" },
+  { "id": 8, "name": "مريم عادل زكي", "email": "mariam.z@cs.edu", "year": 4, "city": "أسيوط" }
+]
